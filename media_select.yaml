@@ -1,0 +1,19 @@
+widget_type: basemediaselect
+entity: {{entity}}
+post_service:
+    service: media_player/select_source
+    entity_id: {{entity}}
+fields:
+  title: {{title}}
+  title2: {{title2}}
+  inputoptions: []
+  selectedoption: ""
+icons: []
+css: []
+static_icons: {}
+static_css:
+  title_style: $media_select_title_style
+  title2_style: $media_select_title2_style
+  select_style: $media_select_select_style
+  widget_style: $media_select_widget_style
+  selectcontainer_style: $media_select_container_style
