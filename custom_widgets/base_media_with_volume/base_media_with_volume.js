@@ -77,7 +77,15 @@ function base_media_with_volume(widget_id, url, skin, parameters)
         self.state = state.state
         self.minvalue = 0
         self.maxvalue = 1
-        self.stepvalue = 0.1
+        if ("step" in self.parameters)
+    	{
+        self.stepvalue = self.parameters.step / 100;
+    	}
+    	else
+    	{
+        self.stepvalue = 0.1;
+    	}
+
         if ("volume_level" in state.attributes)
         {
             self.volume_level = state.attributes.volume_level
