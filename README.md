@@ -14,7 +14,7 @@ the lines to add can be found in here in custom_css/default/variables.yaml
 usage in dashboard:
 
 ```
-your_speakers:
+your_speaker:
     widget_type: media_with_volume
     title: Your Title
     title2: Your Subtitle
