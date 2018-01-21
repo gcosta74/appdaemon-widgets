@@ -12,7 +12,7 @@ post_service_volume:
 fields:
   title: {{title}}
   title2: {{title2}}
-  Brightness: ""
+  Volume: ""
   MinValue: "0"
   MaxValue: "1"
   StepValue: "0.1"

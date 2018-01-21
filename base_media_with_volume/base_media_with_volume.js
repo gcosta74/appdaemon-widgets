@@ -9,7 +9,7 @@ function base_media_with_volume(widget_id, url, skin, parameters)
     
     self.widget_id = widget_id
     
-    // Store on brightness or fallback to a default
+    // Store on Volume or fallback to a default
         
     // Parameters may come in useful later on
     
@@ -130,9 +130,9 @@ function base_media_with_volume(widget_id, url, skin, parameters)
     function onChange(self, state)
     {
         setTimeout(function(){
-        if (self.volume_level != self.ViewModel.Brightness())
+        if (self.volume_level != self.ViewModel.Volume())
         {
-            self.volume_level = self.ViewModel.Brightness()
+            self.volume_level = self.ViewModel.Volume()
             args = self.parameters.post_service_volume
             args["volume_level"] = self.volume_level
 
@@ -179,11 +179,11 @@ function base_media_with_volume(widget_id, url, skin, parameters)
         }
         if (typeof volume == 'undefined')
         {
-            self.set_field(self, "Brightness", 0)
+            self.set_field(self, "Volume", 0)
         }
         else
         {
-            self.set_field(self, "Brightness", volume)
+            self.set_field(self, "Volume", volume)
         }
     }
 
