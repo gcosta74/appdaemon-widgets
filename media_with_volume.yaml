@@ -1,0 +1,32 @@
+widget_type: base_media_with_volume
+entity: {{entity}}
+post_service_active:
+    service: homeassistant/turn_on
+    entity_id: {{entity}}
+post_service_inactive:
+    service: homeassistant/turn_off
+    entity_id: {{entity}}
+post_service_volume:
+    service: media_player/volume_set
+    entity_id: {{entity}}
+fields:
+  title: {{title}}
+  title2: {{title2}}
+  Brightness: ""
+  MinValue: "0"
+  MaxValue: "1"
+  StepValue: "0.1"
+  icon: ""
+  icon_style: ""
+icons:
+  icon_on: $media_with_volume_icon_on
+  icon_off: $media_with_volume_icon_off
+static_icons: []
+static_css:
+  title_style: $media_with_volume_title_style
+  title2_style: $media_with_volume_title2_style
+  slider_style: $media_with_volume_slider_style
+  widget_style: $media_with_volume_widget_style
+css:
+  icon_style_active: $media_with_volume_icon_style_active
+  icon_style_inactive: $media_with_volume_icon_style_inactive
