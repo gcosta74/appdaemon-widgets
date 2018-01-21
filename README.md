@@ -5,7 +5,11 @@ Appdaem Widgets for Home Assistant
 - Media-Player Source Select
 - Climate Operation Mode Select
 
+<<<<<<< HEAD
 ![Alt text](widgets_samples.png)
+=======
+![Alt text](widget_samples.jpg)
+>>>>>>> cb7cf68d2a5d3aaae027059ee04a3581695f5a65
 
 place the files in the directory /conf/custom_widgets
 edit variables.yaml in your own or the default skin.
@@ -15,6 +19,7 @@ usage in dashboard:
 
 ```
 your_speakers:
+your_speaker:
     widget_type: media_with_volume
     title: Your Title
     title2: Your Subtitle
