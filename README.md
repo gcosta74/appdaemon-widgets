@@ -6,7 +6,7 @@ Appdaem Widgets for Home Assistant
 - Climate Operation Mode Select
 
 
-![Alt text](widgets_samples.png)
+![Alt text](widget_samples.png)
 
 place the files in the directory /conf/custom_widgets
 edit variables.yaml in your own or the default skin.
