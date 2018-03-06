@@ -115,7 +115,7 @@ function base_media_with_volume(widget_id, url, skin, parameters)
 
     function OnButtonClick(self)
     {
-        if (self.state == "off")
+        if (self.state == self.parameters.state_inactive)
         {
             args = self.parameters.post_service_active 
             if ("on_attributes" in self.parameters)
@@ -151,14 +151,14 @@ function base_media_with_volume(widget_id, url, skin, parameters)
 
     function toggle(self)
     {
-        if (self.state == "on")
+        if (self.state == self.parameters.state_active)
         {
-            self.state = "off";
+            self.state = self.parameters.state_inactive;
             self.volume_level = 0
         }
         else
         {
-            self.state = "on";
+            self.state = self.parameters.state_active;
         }
         set_view(self, self.state, self.volume_level)
     }
@@ -173,7 +173,7 @@ function base_media_with_volume(widget_id, url, skin, parameters)
     function set_view(self, state, volume)
     {
         
-        if (state == "on")
+        if (state == self.parameters.state_active || ("active_map" in self.parameters && self.parameters.active_map.includes(state)))
         {
             // Set Icon will set the style correctly for an icon
             self.set_icon(self, "icon", self.icons.icon_on)

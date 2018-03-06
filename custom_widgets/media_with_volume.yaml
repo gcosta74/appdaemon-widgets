@@ -1,5 +1,7 @@
 widget_type: base_media_with_volume
 entity: {{entity}}
+state_active: "on"
+state_inactive: "off"
 post_service_active:
     service: homeassistant/turn_on
     entity_id: {{entity}}

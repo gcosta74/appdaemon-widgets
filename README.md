@@ -23,6 +23,9 @@ your_speaker:
     icon_on: mdi-speaker
     icon_off: mdi-speaker-off
     step: 3
+    active_map:
+        - playing
+        - paused
     
 your_media_select:
   widget_type: media_select
